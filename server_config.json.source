@@ -1,0 +1,56 @@
+{
+	"servername": "${CONFIG_SERVERNAME}",
+	"servername_short": "${CONFIG_SERVERNAME_SHORT}",
+	"gamemode": "${CONFIG_GAMEMODE}",
+	"website_url": "${CONFIG_WEBSITE_URL}",
+	"ipaddress": "0.0.0.0",
+	"port": 7777,
+	"maxplayers": ${CONFIG_MAX_PLAYERS},
+	"password": "${CONFIG_PASSWORD}",
+	"timeout": ${CONFIG_TIMEOUT},
+	"iplimit": ${CONFIG_IPLIMIT},
+	"masterlist": ${CONFIG_MASTERLIST},
+	"plugins": [
+		"OnsetJavaPlugin"${CONFIG_EXTRA_PLUGINS}
+	],
+	"packages": [
+		"java"${CONFIG_EXTRA_PACKAGES}
+	],
+	"voice": ${CONFIG_VOICE},
+	"voice_sample_rate": ${CONFIG_VOICE_SAMPLE_RATE},
+	"voice_spatialization": ${CONFIG_VOICE_3D},
+	"pools": {
+		"player": {
+			"distance": ${CONFIG_STREAM_DISTANCE_PLAYER},
+			"update_rate": ${CONFIG_STREAM_RATE_PLAYER}
+		},
+		"voice": {
+			"distance": ${CONFIG_STREAM_DISTANCE_VOICE},
+			"update_rate": ${CONFIG_STREAM_RATE_VOICE}
+		},
+		"vehicle": {
+			"distance": ${CONFIG_STREAM_DISTANCE_VEHICLE},
+			"update_rate": ${CONFIG_STREAM_RATE_VEHICLE}
+		},
+		"object": {
+			"distance": ${CONFIG_STREAM_DISTANCE_OBJECT},
+			"update_rate": ${CONFIG_STREAM_RATE_OBJECT}
+		},
+		"npc": {
+			"distance": ${CONFIG_STREAM_DISTANCE_NPC},
+			"update_rate": ${CONFIG_STREAM_RATE_NPC}
+		},
+		"pickup": {
+			"distance": ${CONFIG_STREAM_DISTANCE_PICKUP},
+			"update_rate": ${CONFIG_STREAM_RATE_PICKUP}
+		},
+		"door": {
+			"distance": ${CONFIG_STREAM_DISTANCE_DOOR},
+			"update_rate": ${CONFIG_STREAM_RATE_DOOR}
+		},
+		"text3d": {
+			"distance": ${CONFIG_STREAM_DISTANCE_TEXT3D},
+			"update_rate": ${CONFIG_STREAM_RATE_TEXT3D}
+		}
+	}
+}
