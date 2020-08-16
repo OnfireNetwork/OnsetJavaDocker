@@ -34,8 +34,6 @@ ENV CONFIG_STREAM_DISTANCE_DOOR=12000
 ENV CONFIG_STREAM_RATE_DOOR=0.1
 ENV CONFIG_STREAM_DISTANCE_TEXT3D=12000
 ENV CONFIG_STREAM_RATE_TEXT3D=0.1
-ENV CONFIG_PLUGINS=
-ENV CONFIG_PACKAGES=
 
 RUN apt-get update -y && apt-get install -y gcc-8 g++-8 software-properties-common lib32gcc1 cmake git curl wget gettext
 RUN wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | apt-key add -
